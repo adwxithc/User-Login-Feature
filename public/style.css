@@ -1,0 +1,39 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Yantramanav:wght@900&display=swap');
+
+.center-div{
+    padding-top:10%
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: aliceblue;
+}
+
+
+#login .title>span{
+    font-size:.8em
+}
+
+#erroruname,#errorpasswd{
+    color: rgb(210, 12, 12);
+    font-weight: 500
+}
+.body-box{
+    width: 50%;
+}
+
+.loginbox{
+    width: 50%;
+    box-shadow:  5px 10px  20px 5px rgba(0,0,0,0.25);;
+}
+@media (min-width:1200px) {
+
+    .loginbox{
+    width: 25%;
+}
+}

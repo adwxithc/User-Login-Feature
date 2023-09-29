@@ -1,0 +1,38 @@
+<%- include('header') -%>
+
+<div class="center-div" id="login">
+    <div class="container py-5 loginbox p-4">
+        <div class="title text-center pb-3">
+            <h2 class="font-weight-bold">User Login</h2>
+            <span>Log in for an existing user</span>
+            <% if (locals.logout) { %>
+                <div class="text-center alert-success"><%= logout %></div>
+            <% } %>
+            <% if (locals.invalid) { %>
+                <div class="text-center alert-danger"><%= invalid %></div>
+            <% } %>
+        </div>
+        <form action="/route/login" method="post" id="logid" onsubmit="return validateForm()">
+            <div class="form-group pb-3">
+                <input type="text" class="form-control" placeholder="username" name="username" id="username">
+                <small class="form-text text-white">Registered Username</small>
+                <div id="erroruname"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="password" name="password" id="password">
+                <div id="errorpasswd"></div>
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" class="btn btn-primary mt-3" value="Login">
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+
+
+<%- include('footer') -%>
+
+    

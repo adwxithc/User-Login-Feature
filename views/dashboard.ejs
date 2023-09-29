@@ -1,0 +1,18 @@
+<%-include('header')-%>
+
+<div class="text-center center-div" id="login">
+    <div class="container py-5 body-box border">
+       <h3>Welcome Home</h3>
+       <h5><%=locals.user?user:'User'%></h5>
+    <input type="button" value="Logout" id="logout" class="btn btn-primary rounded-pill">
+       <!-- <button id="logout">Logout</button> -->
+       <!-- <a href="/route/logout">Logout</a> -->
+       <!-- onclick="window.location.href= '/route/logout'" -->
+
+    </div>
+</div>
+
+<script>
+   // window.addEventListener('popstate', function(){window.location.href="/route/dashboard"});
+   </script>
+<%-include('footer')-%>
